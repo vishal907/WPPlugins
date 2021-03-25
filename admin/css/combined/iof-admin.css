@@ -1,0 +1,179 @@
+#sides_product_data {
+    padding: 1em;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-top {
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.edit_item_sides {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.iof-admin-search-txt {
+    width: 150px !important;
+}
+
+.iof-admin-search-btn {
+    width: 125px !important;
+    margin-left: 8px !important;
+}
+
+ul#wp-admin-bar-iof-search-forms {
+    height: 0 !important;
+    width: 925px !important;
+    float: right !important;
+    background-color: #23282d !important;
+}
+
+ul#wp-admin-bar-iof-search-forms input {
+    height: 20px !important;
+    vertical-align: top!important;
+    line-height: 0!important;
+	 min-height: 20px !important;
+}
+
+#wpadminbar .ab-submenu {
+    padding: 5px 0 !important;
+}
+
+
+ul#wp-admin-bar-iof-search-forms input[type="submit"] {
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 175, 80) !important;
+}
+
+/*ul#adminmenu {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}*/
+
+li#wp-admin-bar-iof-search-forms-mobile {
+    display: none !important;
+}
+
+li#wp-admin-bar-iof-search-forms-mobile:hover {
+    cursor: pointer !important;
+}
+
+@media (max-width: 1450px) {
+    /*div#wpbody {
+        padding-top: 36px !important;
+    }*/
+
+  /*  ul#adminmenu {
+        padding-top: 36px !important;
+    }
+*/
+    ul#wp-admin-bar-iof-search-forms {
+        height: 24px !important;
+        width: 100% !important;
+        z-index: 90;
+    }
+
+    ul#wp-admin-bar-iof-search-forms li {
+        float: left !important;
+    }
+}
+
+@media (max-width: 950px) {
+    ul#wp-admin-bar-iof-search-forms input {
+        width: 112px !important;
+    }
+}
+
+@media (min-width: 783px) {
+    ul#wp-admin-bar-iof-search-forms {
+        display: block;
+    }
+}
+
+@media (max-width: 782px) {
+    /*div#wpbody {
+        padding-top: 0 !important;
+    }*/
+
+    ul#wp-admin-bar-iof-search-forms {
+        display: none;
+    }
+
+    ul#wp-admin-bar-iof-search-forms li {
+        width: 100% !important;
+        background-color: #23282d;
+    }
+
+    ul#wp-admin-bar-iof-search-forms input {
+        width: 44% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-left: 15px !important;
+    }
+
+    li#wp-admin-bar-iof-search-forms-mobile {
+        display: block !important;
+    }
+
+    li#wp-admin-bar-iof-search-forms-mobile > div {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    li#wp-admin-bar-iof-search-forms-mobile > div::before {
+        font-family: "FontAwesome" !important;
+        content: "\f002";
+        text-indent: 0;
+        font-size: 26px !important;
+        top: 8px;
+        left: 12px !important;
+    }
+}

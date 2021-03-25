@@ -1,0 +1,55 @@
+#zip-code-modal {
+    text-align: center;
+}
+
+input.iof-delivery-date {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    #zip-code-modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    #order_review {
+        width: 44% !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #order_review {
+        width: 100% !important;
+    }
+}
+
+#zip-code-modal > .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.iof-col-xs-12 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.variation-Servings {
+    display: none;
+}
+
+.shipping-calculator-button {
+    display: none !important;
+}
+
+.shipping-calculator-form {
+    display: block !important;
+}
+
+.iof-order-item-row {
+    border: solid #dff0d8 2px;
+}

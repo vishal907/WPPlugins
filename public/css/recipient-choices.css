@@ -1,0 +1,34 @@
+label[for=recipient_code] {
+    font-size:23pt;
+    line-height: 50px;
+}
+
+div[role=tabpanel] {
+    padding-top: 20px;
+}
+
+ul[role=tablist] {
+    margin-left: 0;
+}
+
+div.thumbnail {
+    max-width: 300px;
+    min-height:358px;
+    display:inline-block;
+    margin-right:25px;
+    margin-left:25px;
+    vertical-align:top;
+    position:relative;
+}
+
+div.meal_details, div.meal_details > img {
+    width:145px;
+}
+
+div.meal_details > img {
+    margin-bottom: 0 !important;
+}
+
+.yourMeals{
+    display: none;
+}
